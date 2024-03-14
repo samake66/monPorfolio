@@ -453,10 +453,10 @@ header{
     color:aliceblue;
     background-color: darkgoldenrod;
 
-    transition: transform 1s ease;
+    transition: transform 0,3s ease;
     }
     .main-projet a:hover{
-      transform: rotate(45deg);
+      transform: rotate(15deg);
     }
     .main-projet p{
       border: 1px solid;
@@ -607,7 +607,7 @@ header{
   }
   .div-article div{
     background-color: rgb(93, 73, 24);
-    width: 50%;
+    width: 90%;
     border: 1px solid;
     border-radius: 10px;
     gap: 2px;
@@ -616,7 +616,7 @@ header{
     flex-direction: column;
   }
   .div-article div:hover{
-    width: 60%;
+    width: 100%;
     transition: width 0,2s;
     border: white solid;
   }
