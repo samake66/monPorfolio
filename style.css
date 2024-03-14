@@ -1,0 +1,647 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* Pour coller le menu au bord, sans espace */
+    margin: 0;
+    padding: 0;
+    background: rgb(162, 152, 38);
+    background: linear-gradient(90deg,rgba(2,0,36,1) 0% ,rgba(121,68,9.85) 35%, rgba(0, 255,255 , 1) 100%);
+  }
+  h1{
+    text-shadow: 1px 1px white;
+    font-size: 60px;
+  }
+
+  h2{
+    color: darkgoldenrod;
+    text-shadow: 1px 1px white;
+    font-size: 40px;
+    font-size: 70px;
+  }
+
+
+  
+  #hamburger {
+    /* Pour que la checkbox ne s'affiche pas */
+    display: none;
+  }
+  
+  #hamburger-logo {
+    /* Pour que le curseur soit un pointeur */
+    cursor: pointer;
+    background: black;
+    width: 200px;
+    display: block;
+    color: white;
+    /* Pour que le menu hamburger s'affiche toujours */
+    text-align: right;
+    /* Pour que le menu hamburger soit "rangé" par défaut */
+    transform: translateX(-168px);
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    overflow: hidden;
+    width: 200px;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateX(-200px);
+  }
+  
+  #hamburger-logo,
+  nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.7s;
+  }
+  
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+  #hamburger:checked ~ #hamburger-logo,
+  #hamburger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translate(0);
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    background: #444;
+  }
+/* css sur index.html*/
+
+header{
+  background-color: darkgoldenrod;
+  height: 170px;
+  
+}
+
+  .div-main img{
+    width: 150px;
+    height: 200px;
+    border-radius: 5cqb;
+  }
+  .div-main h2{
+    color: black;
+    text-shadow: 1px 1px white;
+    font-size: 40px;
+    text-transform: lowercase;
+  }
+
+  .main-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-main{
+    text-align: center;
+    width: 400px;
+    height: 700px;
+    background-color: darkgoldenrod;
+    margin: 20px;
+    border: 5px solid;
+    border-radius: 20px;
+    
+    
+  }
+.menu-normal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  
+}
+.menu-normal a{
+  font-size: 30px;
+  color: aqua;
+}
+
+.menu-normal a:hover{
+  color:black;
+}
+
+ 
+  .div-profil .mon-img{
+    width: 100px;
+    border-radius: 50px;
+  }
+  .div-profil{
+    background-color: burlywood;
+    justify-content:center;
+    display: flex;
+  }
+
+  footer {
+    position:absolute;
+    color: black;
+    text-shadow: 1px 1px white;
+
+  }
+
+  .div-profil li{
+    list-style: none;
+  }
+
+
+  /*projets*/
+ 
+  .main-projet{
+    display:flex;
+    flex-direction:row;
+    gap: 20px;
+  }
+  .main-projet a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 40px;
+    color:aliceblue;
+    background-color: darkgoldenrod;
+
+    transition: transform 0.3s ease;
+    }
+    .main-projet a:hover{
+      transform: rotate(20deg);
+      background-color: black;
+    }
+    .main-projet p{
+      background-color:aliceblue;
+      border: 2px solid;
+      border-color:darkgoldenrod;
+      border-radius: 10px;
+    }
+    .main-projet div{
+      background-color:darkolivegreen;
+      width: 25%;
+      border: 5px solid;
+      border-color:darkgoldenrod;
+      border-radius: 20px;
+    }
+  
+
+
+  .projet1 ul li  img{
+    width: 100%;
+
+  }
+  .projet1 ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+  }
+  
+  .projet1 img:hover{
+    filter: grayscale(1);
+    border-radius: 20px;
+    opacity: 1;
+  }
+  .main-projet div:hover{
+    background-color: darkgoldenrod;
+    border-color: white;
+  }
+  .projet2 img{
+    filter: grayscale(1);
+    border-radius: 20px;
+    width: 100%;
+    border-radius: 10px;
+
+  }
+  .projet3 img{
+    filter: grayscale(1);
+    border-radius: 20px;
+    width: 100%;
+    border-radius: 20px;
+  }
+  /*contact*/
+
+  .main-contact{
+    display: flex;
+    justify-content:space-around;
+  }
+
+  .div-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  name{
+    width: 100%;
+  }
+
+  .div-contact{
+    width: 400px;
+    height: 700px;
+    background: rgb(162, 152, 38);
+    background: linear-gradient(90deg,rgba(2,0,36,1) 0% ,rgba(121,68,9.85) 35%, rgba(0, 255,255 , 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-contact div:hover{
+    background: none;
+  }
+ 
+  .doigt{
+    width: 30px;
+  }
+
+  .msg{
+    width: 100%;
+    height: 150px;
+  }
+
+  .div-contact ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .div-contact ul li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-compte{
+    width: 400px;
+    height: 700px;
+    background: rgb(162, 152, 38);
+    background: linear-gradient(90deg,rgba(2,0,36,1) 0% ,rgba(121,68,9.85) 35%, rgba(0, 255,255 , 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+  }
+
+  .div-compte ul li{
+    display: flex;
+   
+  }
+
+  .link, .fcbk, .wsp, .insta{
+    width: 100px;
+    border-radius: 50px;
+  }
+
+
+  /*etudes*/
+  .main-etu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .div-profil{
+    background-color: darkgoldenrod;
+    border: 5px solid;
+    border-color: transparent;
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .div-etude div{
+    width: 33%;
+    border: 5pX solid;
+    border-radius: 30px;
+    border-color:darkgoldenrod;
+    text-align: center;
+    justify-content: center;
+
+    background-color:white
+  }
+  .div-etude{
+    background-color:darkgoldenrod;
+    border: 2px solid;
+    border-radius: 30px;
+    width: 100%;
+    gap: 10px;
+    margin: 0 20px;
+    padding: 0 20px;
+    display: flex;
+    
+  }
+  .div-etude img{
+    height: 200px;
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  /*article*/
+  .main-article{
+    display: flex;
+
+  }
+  .div-article{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+  }
+  .div-article div{
+    background-color: darkgoldenrod;
+    width: 25%;
+    border: 5px solid;
+    border-radius: 20px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .div-article div:hover{
+    width: 35%;
+    transition: width 0,2s;
+    border: white solid;
+  }
+  .div-article a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    color:aliceblue;
+    background-color: dimgray;
+
+  }
+  .div-article a:hover{
+    height: 50px;
+    width: 200px;
+    background-color:black;
+    transition: width 1s;
+    transition-property: all;
+  }
+  .div-article img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .div-article p{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+
+
+  /*Respnsive design*/
+
+  @media screen and (max-width: 600px) { 
+
+    body{
+     background-image: url(images/fond.jpeg);
+    }
+    header{
+      width: 100%;
+      height: 60px;
+      background-color:lightcoral;
+    }
+    
+  /* css sur index.html*/
+  h1{
+    font-size: 30px;
+  }
+
+  h2{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-main{
+    text-align: center;
+    width: 300px;
+    height: 100vh;
+    background-color: darkgoldenrod;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    
+  }
+  .menu-normal{
+    display: none;
+  }
+
+  /*projets*/
+ 
+  .main-projet{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    padding: 0 20px;
+    
+  }
+  .main-projet a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 20px;
+    color:aliceblue;
+    background-color: darkgoldenrod;
+
+    transition: transform 1s ease;
+    }
+    .main-projet a:hover{
+      transform: rotate(45deg);
+    }
+    .main-projet p{
+      border: 1px solid;
+      border-radius: 10px;
+    }
+    .main-projet div{
+      background-color:darkolivegreen;
+      width: 100%;
+      border: 2px solid;
+      border-color:darkgoldenrod;
+      border-radius: 10px;
+      place-content: center;
+      margin-bottom: 5px;
+      }
+  
+
+    .img1{
+      display: none;
+    }
+    .img2{
+      display: none;
+    }
+    .img3{
+      display: none;
+    }
+    .img4{
+      width: 100%;
+    }
+
+  .projet1 ul{
+    display: flex;
+    
+    gap: 2px;
+
+  }
+
+  /*contact*/
+
+  .main-contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .div-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: burlywood;
+  }
+
+  .div-contact{
+    width: 200px;
+    height: 350px;
+    background-color:darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+  }
+  .div-compte{
+    width: 200px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 10px;
+    
+  }
+
+  .doigt{
+    display: none;
+  }
+
+  .div-form img{
+    width: 40%;
+  }
+
+  .msg{
+    width: 100px;
+    height: 20px;
+  }
+  .link, .fcbk, .wsp, .insta{
+    width: 50px;
+    border-radius: 20px;
+  }
+
+
+
+  /*etudes*/
+  .main-etu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-profil{
+    background-color: darkgoldenrod;
+    border: 1px solid;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .div-etude div{
+    width: 100%;
+    border: 5pX solid;
+    border-radius: 20px;
+    border-color:darkgoldenrod;
+    text-align: center;
+    justify-content: center;
+
+    background-color:white
+  }
+  .div-etude{
+    background-color:darkgoldenrod;
+    border: 2px solid;
+    border-radius: 20px;
+    width: 100%;
+    gap: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .div-etude img{
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  /*article*/
+  .main-article{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+
+  }
+  .div-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .div-article div{
+    background-color: rgb(93, 73, 24);
+    width: 50%;
+    border: 1px solid;
+    border-radius: 10px;
+    gap: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .div-article div:hover{
+    width: 60%;
+    transition: width 0,2s;
+    border: white solid;
+  }
+  .div-article a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    color:aliceblue;
+    background-color:darkslategray;
+
+  }
+  .div-article a:hover{
+    height: 30px;
+    width: 100px;
+    background-color:black;
+    transition: width 1s;
+    transition-property: all;
+  }
+
+  .div-article p{
+    gap: 10px;
+  }
+
+}
+
