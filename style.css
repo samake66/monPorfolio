@@ -95,6 +95,9 @@ header{
     font-size: 40px;
     text-transform: lowercase;
   }
+  .div-main p{
+    font-size: 20px;
+  }
 
   .main-index{
     display: flex;
@@ -105,7 +108,7 @@ header{
   .div-main{
     text-align: center;
     width: 400px;
-    height: 700px;
+    height: 100%;
     background-color: darkgoldenrod;
     margin: 20px;
     border: 5px solid;
@@ -214,14 +217,12 @@ header{
     border-color: white;
   }
   .projet2 img{
-    filter: grayscale(1);
     border-radius: 20px;
     width: 100%;
     border-radius: 10px;
 
   }
   .projet3 img{
-    filter: grayscale(1);
     border-radius: 20px;
     width: 100%;
     border-radius: 20px;
@@ -402,12 +403,13 @@ header{
   @media screen and (max-width: 600px) { 
 
     body{
-     background-image: url(images/fond.jpeg);
+      background: rgb(34,193,195);
+      background: linear-gradient(0deg, rgba(34,193,195,0) 27%, rgba(159,253,45,0) 100%);
     }
     header{
       width: 100%;
       height: 60px;
-      background-color:lightcoral;
+      background-color: gray;
     }
     
   /* css sur index.html*/
@@ -423,13 +425,18 @@ header{
 
   .div-main{
     text-align: center;
-    width: 300px;
-    height: 100vh;
-    background-color: darkgoldenrod;
+    width: 80%;
+    height: 100%;
+    background-color: white;
     margin: 10px;
-    border: 2px solid;
+    box-shadow: 5px 5px 5px black;
     border-radius: 10px;
     
+  }
+  .div-main img{
+    width: 200px;
+    height: 250px;
+    border-radius: 110px;
   }
   .menu-normal{
     display: none;
@@ -449,27 +456,28 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    height: 20px;
+    height: 40px;
+    font-size: 20px;
     color:aliceblue;
-    background-color: darkgoldenrod;
+    background-color: black;
 
-    transition: transform 0,3s ease;
     }
-    .main-projet a:hover{
-      transform: rotate(15deg);
-    }
+
     .main-projet p{
       border: 1px solid;
       border-radius: 10px;
     }
     .main-projet div{
-      background-color:darkolivegreen;
+      background-color: white;
       width: 100%;
       border: 2px solid;
-      border-color:darkgoldenrod;
+      box-shadow: 5px 5px 5px black;
       border-radius: 10px;
       place-content: center;
       margin-bottom: 5px;
+      }
+      .main-projet div:hover{
+        
       }
   
 
@@ -502,16 +510,20 @@ header{
   }
 
   .div-form{
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: burlywood;
+    background-color: gray;
+    border-radius: 10px;
   }
 
   .div-contact{
-    width: 200px;
-    height: 350px;
+    width: 90%;
+    height: 500px;
     background-color:darkslategray;
+    box-shadow: 5px 5px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -521,14 +533,13 @@ header{
     border-radius: 10px;
   }
   .div-compte{
-    width: 200px;
-    height: 350px;
+    width: 90%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border: 1px solid;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
     
   }
 
@@ -537,16 +548,27 @@ header{
   }
 
   .div-form img{
-    width: 40%;
+    width: 50%;
   }
 
   .msg{
-    width: 100px;
-    height: 20px;
+    width: 100%;
+    height: 70px;
   }
   .link, .fcbk, .wsp, .insta{
-    width: 50px;
-    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  .div-compte ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+  .div-compte ul li p{
+    display: none;
   }
 
 
@@ -559,28 +581,29 @@ header{
     justify-content: center;
   }
   .div-profil{
-    background-color: darkgoldenrod;
-    border: 1px solid;
-    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+    width: 90%;
     border-radius: 50px;
   }
 
   .div-etude div{
-    width: 100%;
+    width: 90%;
     border: 5pX solid;
     border-radius: 20px;
-    border-color:darkgoldenrod;
+    border-color:gray;
+    box-shadow: 5px 5px 5px black;
     text-align: center;
     justify-content: center;
 
     background-color:white
   }
   .div-etude{
-    background-color:darkgoldenrod;
-    border: 2px solid;
+    background-color:gray;
+    box-shadow: 5px 5px 5px black;
     border-radius: 20px;
-    width: 100%;
-    gap: 10px;
+    width: 90%;
+    gap: 30px;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -603,22 +626,22 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
   }
   .div-article div{
-    background-color: rgb(93, 73, 24);
+    background-color: white;
     width: 90%;
-    border: 1px solid;
+    box-shadow: 5px 5px 5px black;
     border-radius: 10px;
-    gap: 2px;
+    gap: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   .div-article div:hover{
-    width: 100%;
+    width: 95%;
     transition: width 0,2s;
-    border: white solid;
+    box-shadow: 5px 5px 5px gray;
   }
   .div-article a{
     display: flex;
@@ -626,9 +649,10 @@ header{
     justify-content: center;
     border-radius: 10px;
     height: 40px;
-    width: 100px;
+    width: 200px;
     color:aliceblue;
-    background-color:darkslategray;
+    font-size: 20px;
+    background-color:black;
 
   }
   .div-article a:hover{
@@ -641,6 +665,12 @@ header{
 
   .div-article p{
     gap: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .div-article h3{
+    font-size: 40px;
   }
 
 }
